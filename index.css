@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --navbar-heigh: 60;
+}
+nav img {
+  width: 60px;
+  height: 50px;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+#logo {
+  margin: 10px 34px;
+}
+#logo img {
+  height: 50px;
+  margin: 3px 4px;
+}
+#navbar ul {
+  display: flex;
+  font-family: "Dancing Script", cursive;
+  font-family: "Lobster", cursive;
+}
+#navbar::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.4;
+}
+#navbar ul li {
+  list-style: none;
+  font-size: 1.3rem;
+}
+#navbar ul li a {
+  color: white;
+  display: block;
+  padding: 3px 22px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+#navbar ul li a:hover {
+  color: black;
+  background-color: white;
+}
+
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 3px 200px;
+  height: 333px;
+  justify-content: center;
+  align-items: center;
+}
+
+#home::before {
+  content: "";
+  background: url("./pop.jpg") no-repeat; /* no-repeat center center/cover; */
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height: 75%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.89;
+}
+#home h1 {
+  color: white;
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  font-family: "Lobster", cursive;
+}
+#home p {
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Dancing Script", cursive;
+  height: 633px;
+}
+#services {
+  margin: 5px;
+  display: flex;
+}
+
+#services .box {
+  border: 3px solid black;
+  padding: 34px;
+  margin: 25px 25px;
+  border-radius: 28px;
+  background-color: #c26fb7;
+}
+#services .box img {
+  margin: auto;
+  display: block;
+}
+#services .box p {
+  font-size: 1.2rem;
+  font-family: "Dancing Script", cursive;
+}
+#services {
+}
+
+/* clients section*/
+#client-sention {
+}
+#client-sention::before {
+  content: "";
+  position: absolute;
+  background: url("../eren\ yeager/l.jpg") no-repeat;
+  width: 100%;
+  height: 80%;
+  z-index: -1;
+  opacity: 0.3;
+}
+.client-item {
+  width: 270px;
+  margin: 4%;
+  padding: 23px;
+}
+#clients {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+#clients img {
+  height: 190px;
+}
+footer {
+  background: black;
+  color: #f2f2f2;
+  padding: 9px 20px;
+}
+#contact-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 9px;
+  font-size: 1.1rem;
+}
+#contact-box form {
+  width: 40%;
+}
+#contact-box label {
+  font-size: 1.3rem;
+  font-family: "Dancing Script", cursive;
+  font-family: "Lobster", cursive;
+}
+.h-primary {
+  font-size: 2.8rem;
+  padding: 20px;
+  margin: 10px;
+  font-family: "Dancing Script", cursive;
+  font-family: "Lobster", cursive;
+}
+.h-secondary {
+  font-size: 2.3rem;
+  padding: 12px;
+  font-family: "Dancing Script", cursive;
+  font-family: "Lobster", cursive;
+}
+.btn {
+  padding: 6px 20px;
+  border: 2px solid white;
+  background-color: brown;
+  color: white;
+  margin: 17px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.center {
+  text-align: center;
+}
+/* contact setion */
+#contact {
+  position: relative;
+}
+/*#contact::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.7;
+  background: url("./l.jpg") no-repeat center center/cover;
+}*/
+#contact::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.7;
+  background: url("./OIP\ \(2\).jpeg") no-repeat center center/cover;
+}
